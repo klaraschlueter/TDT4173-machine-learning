@@ -1,0 +1,8 @@
+ ;PATIENT #3;PATIENT #8;PATIENT #1;PATIENT #0; 
+Similarity;0.78;0.77;0.66;0.6; 
+birthday;Sat Nov 28 00:00:00 CET 1925;Wed Jan 04 00:00:00 CET 1950;Mon Mar 16 00:00:00 CET 2015;Thu Nov 20 00:00:00 CET 1947; 
+heart_rate;83;89;120;75; 
+name;Claus Hansen;Karlsson Sams;Louise Schilling;Antonia Fehnker; 
+sleep_quality;high;high;high;medium; 
+temperature;38.1;36.5;36.3;39.8; 
+weight;80.0;59.8;40.0;65.0; 

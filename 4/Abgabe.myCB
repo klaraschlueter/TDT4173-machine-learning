@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project name="Abgabe" author="" >
+<instances name="PATIENT">
+  <instance id="PATIENT #5" >
+    <att name="heart_rate" value="170" />
+    <att name="sleep_quality" value="low" />
+    <att name="birthday" value="Sat Aug 31 00:00:00 CEST 1991" />
+    <att name="temperature" value="37.9" />
+    <att name="weight" value="78.0" />
+    <att name="name" value="Felix John" />
+  </instance>
+  <instance id="PATIENT #4" >
+    <att name="heart_rate" value="58" />
+    <att name="sleep_quality" value="medium" />
+    <att name="birthday" value="Wed Feb 02 00:00:00 CET 2000" />
+    <att name="temperature" value="36.0" />
+    <att name="weight" value="90.0" />
+    <att name="name" value="C&#233;dric Machine" />
+  </instance>
+  <instance id="PATIENT #7" >
+    <att name="heart_rate" value="95" />
+    <att name="sleep_quality" value="medium" />
+    <att name="birthday" value="Fri Apr 09 00:00:00 CET 1948" />
+    <att name="temperature" value="35.9" />
+    <att name="weight" value="95.3" />
+    <att name="name" value="Harald Schmid" />
+  </instance>
+  <instance id="PATIENT #6" >
+    <att name="heart_rate" value="130" />
+    <att name="sleep_quality" value="low" />
+    <att name="birthday" value="Thu Jun 20 00:00:00 CET 1974" />
+    <att name="temperature" value="40.1" />
+    <att name="weight" value="60.3" />
+    <att name="name" value="Susanne Stahl" />
+  </instance>
+  <instance id="PATIENT #1" >
+    <att name="heart_rate" value="120" />
+    <att name="sleep_quality" value="high" />
+    <att name="birthday" value="Mon Mar 16 00:00:00 CET 2015" />
+    <att name="temperature" value="36.3" />
+    <att name="weight" value="40.0" />
+    <att name="name" value="Louise Schilling" />
+  </instance>
+  <instance id="PATIENT #0" >
+    <att name="heart_rate" value="75" />
+    <att name="sleep_quality" value="medium" />
+    <att name="birthday" value="Thu Nov 20 00:00:00 CET 1947" />
+    <att name="temperature" value="39.8" />
+    <att name="weight" value="65.0" />
+    <att name="name" value="Antonia Fehnker" />
+  </instance>
+  <instance id="PATIENT #3" >
+    <att name="heart_rate" value="83" />
+    <att name="sleep_quality" value="high" />
+    <att name="birthday" value="Sat Nov 28 00:00:00 CET 1925" />
+    <att name="temperature" value="38.1" />
+    <att name="weight" value="80.0" />
+    <att name="name" value="Claus Hansen" />
+  </instance>
+  <instance id="PATIENT #2" >
+    <att name="heart_rate" value="90" />
+    <att name="sleep_quality" value="low" />
+    <att name="birthday" value="Sun Aug 07 00:00:00 CEST 1983" />
+    <att name="temperature" value="36.4" />
+    <att name="weight" value="150.0" />
+    <att name="name" value="Mary Flasche" />
+  </instance>
+  <instance id="PATIENT #9" >
+    <att name="heart_rate" value="67" />
+    <att name="sleep_quality" value="medium" />
+    <att name="birthday" value="Mon Apr 10 00:00:00 CET 1939" />
+    <att name="temperature" value="36.4" />
+    <att name="weight" value="49.1" />
+    <att name="name" value="Ingrid Ola" />
+  </instance>
+  <instance id="PATIENT #8" >
+    <att name="heart_rate" value="89" />
+    <att name="sleep_quality" value="high" />
+    <att name="birthday" value="Wed Jan 04 00:00:00 CET 1950" />
+    <att name="temperature" value="36.5" />
+    <att name="weight" value="59.8" />
+    <att name="name" value="Karlsson Sams" />
+  </instance>
+</instances>
+<cb name="Patienten">
+     <case name="PATIENT #5" />
+     <case name="PATIENT #4" />
+     <case name="PATIENT #7" />
+     <case name="PATIENT #6" />
+     <case name="PATIENT #1" />
+     <case name="PATIENT #0" />
+     <case name="PATIENT #3" />
+     <case name="PATIENT #2" />
+     <case name="PATIENT #9" />
+     <case name="PATIENT #8" />
+</cb>
+</Project>

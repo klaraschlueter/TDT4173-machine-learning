@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project name="Abgabe" author="" >
+<exp obj="PATIENT" type="Concept" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="heart_rate" c="PATIENT" type="AttributeDesc" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="sleep_quality" c="PATIENT" type="AttributeDesc" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="birthday" c="PATIENT" type="AttributeDesc" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="temperature" c="PATIENT" type="AttributeDesc" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="blood_pressure" c="PATIENT" type="AttributeDesc" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="weight" c="PATIENT" type="AttributeDesc" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="name" c="PATIENT" type="AttributeDesc" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #5" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #4" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #8" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #0" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #6" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #0" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #2" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #0" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #3" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #9" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #1" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #0" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #1" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #0" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="PATIENT #7" c="PATIENT" type="Instance" >
+  <desc>
+  </desc>
+</exp>
+</Project>

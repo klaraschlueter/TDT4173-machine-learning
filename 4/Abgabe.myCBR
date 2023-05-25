@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project name="Abgabe" author="" >
+<svs>
+  <sv name="_unknown_"/>
+  <sv name="_undefined_"/>
+  <sv name="_others_"/>
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="_unknown_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+<qsym name="_others_">
+</qsym>
+</fct>
+</svs>
+<model>
+  <concept name="PATIENT">
+    <desc name="birthday" type="Date" format="dd.MM.yyyy" min="01.01.1900" max="01.01.2100" mult="false" >
+      <fct name="default function" type="Date" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="sleep_quality" type="Symbol" mult="false" >
+      <symbol value="low" />
+      <symbol value="high" />
+      <symbol value="medium" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="low">
+</qsym>
+<qsym name="high">
+</qsym>
+<qsym name="medium">
+</qsym>
+</fct>
+<fct name="sleep_sim" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="low">
+<csym name="medium" sim="0.5"/>
+</qsym>
+<qsym name="high">
+<csym name="medium" sim="0.5"/>
+</qsym>
+<qsym name="medium">
+<csym name="low" sim="0.5"/>
+<csym name="high" sim="0.5"/>
+</qsym>
+</fct>
+    </desc>
+    <desc name="name" type="String" mult="false" >
+      <fct name="default function" type="String" symm="true" config="EQUALITY" n="3" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <desc name="temperature" type="Float" min="0.0" max="45.0" mult="false" >
+      <fct name="default function" type="Float" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+      <fct name="temp_sim" type="AdvancedFloat" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" >
+        <point x="-45.0" y="0.0" />
+        <point x="-3.0" y="0.0" />
+        <point x="-2.0" y="0.25" />
+        <point x="-1.0" y="0.5" />
+        <point x="0.0" y="1.0" />
+        <point x="1.0" y="0.5" />
+        <point x="2.0" y="0.25" />
+        <point x="3.0" y="0.0" />
+        <point x="45.0" y="0.0" />
+      </fct>
+    </desc>
+    <desc name="weight" type="Float" min="0.0" max="500.0" mult="false" >
+      <fct name="default function" type="Float" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+      <fct name="weight_smooth_sim" type="Float" ltype="SMOOTH_STEP_AT" lparam="-30.0" rtype="SMOOTH_STEP_AT" rparam="30.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+      <fct name="weight_exercise_sim" type="AdvancedFloat" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" >
+        <point x="-500.0" y="0.0" />
+        <point x="0.0" y="1.0" />
+        <point x="500.0" y="0.0" />
+      </fct>
+      <fct name="weight_step_sim" type="Float" ltype="STEP_AT" lparam="-250.0" rtype="STEP_AT" rparam="250.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+    </desc>
+    <desc name="heart_rate" type="Integer" min="0" max="200" mult="false" >
+      <fct name="heart_sim" type="Integer" ltype="SMOOTH_STEP_AT" lparam="-20.0" rtype="SMOOTH_STEP_AT" rparam="20.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+      <fct name="default function" type="Integer" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" />
+    </desc>
+    <amalgam name="global_similarity" type="WEIGHTED_SUM" active="true" >
+      <entry name="birthday" active="false" fct="default function" weight="0.0"/>
+      <entry name="sleep_quality" active="true" fct="sleep_sim" weight="2.0"/>
+      <entry name="name" active="false" fct="default function" weight="0.0"/>
+      <entry name="temperature" active="true" fct="temp_sim" weight="1.0"/>
+      <entry name="weight" active="true" fct="weight_exercise_sim" weight="1.0"/>
+      <entry name="heart_rate" active="true" fct="heart_sim" weight="0.5"/>
+    </amalgam>
+  </concept>
+</model>
+<hierarchy>
+  <fct name="default function" type="Taxonomy" mt="PARTNER_QUERY" r="REUSE" t="MAX" qconfig="INNER_NODES_ANY" cconfig="INNER_NODES_ANY" top="inheritanceDesc" sim="0.0" symm="true" >
+    <node name="PATIENT" sim="1.0" parent="inheritanceDesc" />
+  </fct>
+</hierarchy>
+<cases no="10" cb="Patienten"/>
+</Project>

@@ -1,0 +1,8 @@
+ ;PATIENT #9;PATIENT #4;PATIENT #7;PATIENT #0; 
+Similarity;0.98;0.96;0.84;0.77; 
+birthday;Mon Apr 10 00:00:00 CET 1939;Wed Feb 02 00:00:00 CET 2000;Fri Apr 09 00:00:00 CET 1948;Thu Nov 20 00:00:00 CET 1947; 
+heart_rate;67;58;95;75; 
+name;Ingrid Ola;Cédric Machine;Harald Schmid;Antonia Fehnker; 
+sleep_quality;medium;medium;medium;medium; 
+temperature;36.4;36.0;35.9;39.8; 
+weight;49.1;90.0;95.3;65.0; 
