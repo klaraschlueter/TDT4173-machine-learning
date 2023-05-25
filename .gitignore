@@ -1,0 +1,14 @@
+# exclude zip files for handing in code
+*.zip
+
+# exclude assignment 5
+5/
+
+# exclude tex files and images for reports
+*.tex
+*.png
+*.jpg
+*.jpeg
+
+# exclude weird DS fil
+*.DS_Store
