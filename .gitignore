@@ -6,6 +6,7 @@
 
 # exclude tex files and images for reports
 *.tex
+*.bib
 *.png
 *.jpg
 *.jpeg
